@@ -1,0 +1,35 @@
+POST http://localhost:3000/api/cursos/programacion HTTP/1.1
+Content-Type: application/json
+{
+     "id": 5,   
+    "titulo":"Aprende Node.js",
+    "lenguaje":"javascript",
+    "vistas":13098,
+    "nivel":"intermedio"
+}
+
+###
+PUT http://localhost:3000/api/cursos/programacion/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,   
+    "titulo":"Aprende Logica de Programacion",
+    "lenguaje":"java",
+    "vistas":19078,
+    "nivel":"basico"   
+}
+
+###
+GET https://api.mapbox.com/geocoding/v5/mapbox.places/LIMA.json?country=pe&limit=5&language=es&access_token=pk.eyJ1IjoibHNpbHZhYzQiLCJhIjoiY2xiOXZ6anpsMDJqdTNvcGtwbHQyeXl4NSJ9._kqFN3ZMyCfd1vPbck7P4Q HTTP/1.1
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
