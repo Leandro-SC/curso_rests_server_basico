@@ -1,6 +1,6 @@
 
 const { Schema, model } = require('mongoose');
-const USuarioSchema = Schema({
+const UsuarioSchema = Schema({
     nombre: {
         type: String,
         required: [true, 'nombre obligatorio'],
@@ -32,9 +32,14 @@ const USuarioSchema = Schema({
     }
 });
 
+//excluir passwrod
+UsuarioSchema.methods.toJSON = function () {
+    const {__v, password, ...usuario} = this.toObject();
+    return usuario;
+}
 
 
-module.exports = model('Usuario',USuarioSchema);
+module.exports = model('Usuario',UsuarioSchema);
 
 
 

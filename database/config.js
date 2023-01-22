@@ -7,7 +7,7 @@ const dbConnection = async()=>{
     try {
        await mongoose.connect(process.env.MONGO_DB_ATLAS);
 
-       console.log('BAse de datos online')
+       console.log('Base de datos online')
 
 
     } catch (error) {
